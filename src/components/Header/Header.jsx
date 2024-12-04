@@ -8,8 +8,8 @@ return (
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <Link to="/" className="flex items-center">
           <img
-            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-            className="mr-3 h-12"
+            src="/sunil-rathod-high-resolution-logo.png"
+            className="mr-5 h-12"
             alt="Logo"
           />
         </Link>
@@ -98,10 +98,9 @@ return (
                 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                 }
               >
-              Github
+                Github
               </NavLink>
             </li>
-
           </ul>
         </div>
       </div>
