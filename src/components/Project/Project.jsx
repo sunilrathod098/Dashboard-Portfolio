@@ -3,6 +3,12 @@ import React from "react";
 export default function Projects() {
   const projectList = [
     {
+      title: "Profile Dashboard",
+      description:
+        "A Profile Dashboard is an interactive interface that displays and manages user information. Built with JavaScript and React.js/Tailwind, it provides a dynamic and user-friendly experience.",
+      image: "public/profiledashboaerd.png",
+    },
+    {
       title: "YouTube Project",
       description:
         "A feature-rich YouTube clone that allows users to search, watch, and upload videos with an intuitive interface.",
@@ -24,7 +30,7 @@ export default function Projects() {
       title: "Signature Forgery Detection",
       description:
         "A machine learning-based system to detect signature forgery with high accuracy, built using Python and PyTorch.",
-      image:"/Forged-Signatures.jpg",
+      image: "/Forged-Signatures.jpg",
     },
   ];
 

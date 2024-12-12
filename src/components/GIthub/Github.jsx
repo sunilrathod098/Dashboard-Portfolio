@@ -126,17 +126,18 @@
 
 
 
-
-import React, { useEffect, useState } from "react";
 import {
-  Chart as ChartJS,
   BarElement,
   CategoryScale,
+  Chart as ChartJS,
+  Legend,
   LinearScale,
+  Tooltip,
 } from "chart.js";
+import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 
-ChartJS.register(CategoryScale, LinearScale, BarElement);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
 export default function Github() {
   const [data, setData] = useState([]);
@@ -197,7 +198,7 @@ export default function Github() {
   }
 
   return (
-    <div className="flex flex-col items-center bg-gray-600 text-white p-6">
+    <div className="flex flex-col items-center  text-black p-6">
       {/* Avatar and Name Section */}
       <div className="flex items-center justify-center mb-6">
         {/* Avatar */}
@@ -207,13 +208,13 @@ export default function Github() {
           className="rounded-full w-40 h-40 mr-8"
         />
         <div className="text-center">
-          <h2 className="text-3xl mb-2">{data.name}</h2>
+          <h2 className="text-3xl mb-2 text-black">{data.name}</h2>
           <p>
             <a
               href={`https://github.com/${data.login}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-500 text-lg flex-auto m-5"
+              className="text-orange-600 text-lg flex-auto m-5"
             >
               @{data.login}
             </a>
@@ -225,25 +226,27 @@ export default function Github() {
       <div className="flex justify-around w-full mb-4">
         <div className="text-center">
           <p className="text-lg">Followers</p>
-          <p className="text-4xl">{data.followers}</p>
+          <p className="text-4xl text-black">{data.followers}</p>
         </div>
         <div className="text-center">
           <p className="text-lg">Following</p>
-          <p className="text-4xl">{data.following}</p>
+          <p className="text-4xl text-black">{data.following}</p>
         </div>
         <div className="text-center">
           <p className="text-lg">Repos</p>
-          <p className="text-4xl">{data.public_repos}</p>
+          <p className="text-4xl text-black">{data.public_repos}</p>
         </div>
         <div className="text-center">
           <p className="text-lg">Contributions</p>
-          <p className="text-4xl">{contributions}</p>
+          <p className="text-4xl text-black">{contributions}</p>
         </div>
       </div>
 
       {/* Contributions Graph */}
-      <div className="w-full max-w-2xl mt-6">
-        <h3 className="text-center text-2xl mb-4">Contribution Breakdown</h3>
+      <div className="w-full max-w-2xl text-black mt-6">
+        <h3 className="text-center text-2xl text-black mb-4">
+          Contribution Breakdown
+        </h3>
         <Bar
           data={chartData}
           options={{
@@ -259,3 +262,4 @@ export default function Github() {
     </div>
   );
 }
+
