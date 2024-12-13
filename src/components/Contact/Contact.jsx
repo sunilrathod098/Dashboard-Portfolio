@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, tel, message } = formData;
+    const whatsappMessage = `Hi, I am ${name} from ${email}. My phone number is ${tel}. Message: ${message}`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/919022080237?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="relative flex items-top justify-center min-h-[700px] bg-gradient-to-r from-black to-gray-900 sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -14,6 +39,7 @@ export default function Contact() {
                 Fill in the form to start a conversation
               </p>
 
+              {/* Contact Info */}
               <div className="flex items-center mt-8 text-gray-200">
                 <svg
                   fill="none"
@@ -72,7 +98,7 @@ export default function Contact() {
                   stroke-linejoin="round"
                   stroke-width="1.5"
                   viewBox="0 0 24 24"
-                  className="w-8 h-8 text-gray-2  00"
+                  className="w-8 h-8 text-gray-200"
                 >
                   <path
                     stroke-linecap="round"
@@ -90,9 +116,13 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className="p-6 flex flex-col text-black justify-center">
+            <form
+              onSubmit={handleSubmit}
+              className="p-6 flex flex-col text-black justify-center"
+            >
               <div className="flex flex-col">
-                <label for="name" className="hidden">
+                <h1 className="text-stone-50 text-center font-medium">whatsapp-Message</h1>
+                <label for="name" className="hidden text-black">
                   Full Name
                 </label>
                 <input
@@ -100,7 +130,9 @@ export default function Contact() {
                   name="name"
                   id="name"
                   placeholder="Full Name"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-white text-black font-semibold focus:border-orange-500 focus:outline-none"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-300 border border-white text-black font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
 
@@ -113,7 +145,9 @@ export default function Contact() {
                   name="email"
                   id="email"
                   placeholder="Email"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-300 border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
 
@@ -126,7 +160,9 @@ export default function Contact() {
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                  value={formData.tel}
+                  onChange={handleChange}
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-300 border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
 
@@ -138,7 +174,9 @@ export default function Contact() {
                   name="message"
                   id="message"
                   placeholder="Message"
-                  className="w-full mt-2 py-2 px-3 rounded-lg bg-white border border-gray-400 text-black font-semibold resize-none focus:border-orange-500 focus:outline-none"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full mt-2 py-2 px-3 rounded-lg bg-gray-300 border border-gray-400 text-black font-semibold resize-none focus:border-orange-500 focus:outline-none"
                   rows="5"
                 ></textarea>
               </div>
@@ -156,4 +194,3 @@ export default function Contact() {
     </div>
   );
 }
-
