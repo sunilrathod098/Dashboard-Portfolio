@@ -4,24 +4,24 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-y">
+    <footer className="bg-gradient-to-r from-black to-gray-900 border-y z-50 bottom-0">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <Link to="/" className="flex items-center">
+          <div className="mb-9 md:mb-0">
+            <Link to="/" className="flex flex-auto items-center">
               <img
-                src="/sunil-rathod-high-resolution-logo.png"
-                className="mr-3 h-16"
+                src="/public/profilelogo-file.jpg"
+                className="mr-10 h-20"
                 alt="Logo"
               />
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-4 gap-10 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-7 text-sm font-semibold text-white uppercase">
                 Resources
               </h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className="text-white font-medium">
                 <li className="mb-4">
                   <Link to="/" className="hover:underline">
                     Home
@@ -35,10 +35,10 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Follow us
               </h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className="text-white font-medium">
                 <li className="mb-4">
                   <a
                     href="https://github.com/sunilrathod098"
@@ -57,10 +57,10 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Legal
               </h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className="text-white font-medium">
                 <li className="mb-4">
                   <Link to="#" className="hover:underline">
                     Privacy Policy
@@ -75,9 +75,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr className="my-10 border-gray-200 sm:mx-auto lg:my-5" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
+          <span className="text-sm text-white sm:text-center">
             © 2024
             <a
               href="https://github.com/sunilrathod098"
@@ -89,9 +89,9 @@ export default function Footer() {
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             {/* Facebook */}
-            <Link to="#" className="text-gray-500 hover:text-gray-900">
+            <Link to="#" className="text-blue-700 hover:text-blue-700">
               <svg
-                className="w-4 h-4"
+                className="w-6 h-6"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -107,7 +107,7 @@ export default function Footer() {
             </Link>
 
             {/* Discord */}
-            <Link to="#" className="text-gray-500">
+            <Link to="#" className="text-blue-700">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -121,7 +121,7 @@ export default function Footer() {
             </Link>
 
             {/* Twitter */}
-            <Link to="https://x.com/RajputhRathod" className="text-gray-500">
+            <Link to="https://x.com/RajputhRathod" className="text-blue-400">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -139,10 +139,7 @@ export default function Footer() {
             </Link>
 
             {/* Github */}
-            <Link
-              to="https://github.com/sunilrathod098"
-              className="text-gray-500"
-            >
+            <Link to="https://github.com/sunilrathod098" className="text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -162,7 +159,7 @@ export default function Footer() {
             {/* Dribble */}
             <Link
               to="https://dribbble.com/sunilrathd"
-              className="text-gray-500"
+              className="text-pink-400"
             >
               <svg
                 className="w-4 h-4"
@@ -185,3 +182,4 @@ export default function Footer() {
     </footer>
   );
 }
+

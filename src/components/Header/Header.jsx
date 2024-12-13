@@ -4,12 +4,12 @@ import { Link, NavLink } from "react-router-dom";
 export default function Header() {
 return (
   <header className="shadow sticky z-50 top-0">
-    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+    <nav className="bg-black border-white px-4 lg:px-6 py-2.5">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <Link to="/" className="flex items-center">
           <img
-            src="/sunil-rathod-high-resolution-logo.png"
-            className="mr-5 h-12"
+            src="/public/profilelogo-file.jpg"
+            className="mr-8 h-16"
             alt="Logo"
           />
         </Link>
@@ -24,9 +24,9 @@ return (
                 to=""
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-orange-700" : "text-gray-700"
+                    isActive ? "text-blue-700" : "text-white"
                   } border-b
-                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                border-white hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                 }
               >
                 Home
@@ -38,9 +38,9 @@ return (
                 to="/about"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-orange-700" : "text-gray-700"
+                    isActive ? "text-blue-700" : "text-white"
                   } border-b
-                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                 }
               >
                 About
@@ -52,9 +52,9 @@ return (
                 to="/contact"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-orange-700" : "text-gray-700"
+                    isActive ? "text-blue-700" : "text-white"
                   } border-b
-                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                 }
               >
                 Contact
@@ -66,9 +66,9 @@ return (
                 to="/project"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-orange-700" : "text-gray-700"
+                    isActive ? "text-blue-700" : "text-white"
                   } border-b
-                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                 }
               >
                 Projects
@@ -80,9 +80,9 @@ return (
                 to="/github"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-orange-700" : "text-gray-700"
+                    isActive ? "text-blue-700" : "text-white"
                   } border-b
-                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                 }
               >
                 Github
@@ -94,9 +94,9 @@ return (
                 to="/technologies"
                 className={({ isActive }) =>
                   `block py-2 pr-4 pl-3 duration-200 ${
-                    isActive ? "text-orange-700" : "text-gray-700"
+                    isActive ? "text-blue-700" : "text-white"
                   } border-b
-                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                 }
               >
                 Technologies
