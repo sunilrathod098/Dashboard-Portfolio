@@ -6,6 +6,7 @@ const Technologies = () => {
     { name: "Node.js", image: "/public/Node.js_logo.svg" },
     { name: "Express.js", image: "/public/expressjs.png" },
     { name: "MongoDB", image: "/public/mongoDB.png" },
+    { name: "SQL", image: "/public/SQL-Database.png" },
     { name: "JWT Auth", image: "/public/jwt.jpeg" },
     { name: "React", image: "/public/React-icon.svg" },
     { name: "HTML", image: "/public/html.png" },
@@ -32,6 +33,7 @@ const Technologies = () => {
 
   
   const toolsTechs = [
+    { name: "VS Code", image: "/public/vscode.png" },
     { name: "NPM", image: "/public/npm.png" },
     { name: "Vite", image: "/public/vite.svg" },
     { name: "Postman", image: "/public/postman.png" },

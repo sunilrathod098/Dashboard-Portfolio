@@ -61,7 +61,7 @@ const About = () => {
       "I hold a Bachelor’s degree in Computer Science and Technology from Jawaharlal Nehru Technological University (JNTUH), Hyderabad, where I graduated with First Class honors. Throughout my academic career, I delved into key concepts like Operating Systems, Network Systems, and Database Management, laying the foundation for my professional growth.",
     professionalJourney: [
       {
-        title: "Professional Journey - AISHWI Technologies Pvt. Ltd",
+        title: "Work Experience - AISHWI Technologies Pvt. Ltd",
         content: [
           "Worked as a Software Developer Intern at AISHWI Technologies Pvt. Ltd, developing backend APIs using JavaScript, Node.js, Express.js, and MongoDB.",
           "Involved in enhancing system performance and implementing secure user authentication mechanisms.",
@@ -70,7 +70,7 @@ const About = () => {
         image: "/public/aishwi_technologies_logo.jpeg",
       },
       {
-        title: "Professional Journey - Unified Mentor",
+        title: "Work Experience - Unified Mentor",
         content: [
           "As a Data Analyst Intern at Unified Mentor, responsible for data validation, exploratory analysis, and data visualization using Power BI and Tableau.",
           "Provided actionable insights to drive business improvements.",
@@ -94,12 +94,30 @@ const About = () => {
       "My mission is to continue building impactful software solutions that address real-world problems. With a strong foundation in full-stack development, I am committed to learning new technologies and improving my skills.",
     hobbies: [
       "Playing Football",
+      "Learning new Tech",
+      "Participating hackthons",
       "Reading Books",
       "Photography",
       "Traveling",
       "Gaming",
     ],
     languages: ["English", "Hindi", "Telugu", "Marathi"],
+    testimonials: [
+      {
+        name: "Perla Mahesh Kumar",
+        role: "Project Manager & CEO at AISHWI Technologies Pvt. Ltd",
+        testimonial:
+          "Working with Sunil Rathod was a pleasure! He consistently delivered high-quality code and was always eager to learn new technologies. His approach to problem-solving is methodical and effective",
+      },
+    ],
+    funFacts: [
+      "Number of projects completed 13+.",
+      "I speak four languages fluently.",
+      "I have completed 1 hackathons.",
+      "I have completed 1 coding bootcamp.",
+      "Lines of code written 30,000+.",
+      " Cups of coffee consumed during coding marathons 200+.",
+    ],
   };
 
   const renderSection = (title, content, imageSrc, reverse = false) => (
@@ -109,7 +127,7 @@ const About = () => {
       }`}
     >
       <div className="text-left text-stone-50">
-        <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+        <h2 className="text-3xl font-semibold mb-4">{title}</h2>
         {Array.isArray(content) ? (
           <ul className="list-disc pl-6">
             {content.map((item, index) => (
@@ -142,7 +160,7 @@ const About = () => {
         {renderSection(
           "Introduction",
           aboutMe.introduction,
-          "/public/homeprofile2image.jpg"
+          "/public/sunilrathod1.jpg"
         )}
         <br />
         {renderSection(
@@ -153,15 +171,20 @@ const About = () => {
         )}
         <br />
         <br />
-        {/* Render Professional Journey Dynamically */}
-        {aboutMe.professionalJourney.map((journey, index) =>
-          renderSection(
-            journey.title,
-            journey.content,
-            journey.image,
-            journey.reverse
-          )
-        )}
+
+        {/* Professional Journey Section */}
+        <section className="my-12 text-left text-white">
+          <h2 className="text-3xl font-bold mb-6">Professional Journey</h2>
+          {aboutMe.professionalJourney.map((journey, index) =>
+            renderSection(
+              journey.title,
+              journey.content,
+              journey.image,
+              journey.reverse
+            )
+          )}
+        </section>
+
         <br />
         {renderSection(
           "Mission",
@@ -172,10 +195,10 @@ const About = () => {
         <br />
         {/* Skills Visualization */}
         <section className="my-12">
-          <h2 className="text-2xl font-semibold mb-6 from-neutral-50">
+          <h2 className="text-3xl font-semibold mb-6 from-neutral-50">
             Skills Visualization
           </h2>
-          <div className="grid grid-cols-3 md:grid-cols-2 gap-6 text-stone-50">
+          <div className="grid grid-cols-3 md:grid-cols-2 gap-6 text-stone-50  p-6 rounded-lg shadow-lg transition-transform duration-300 ease-in-out">
             <div>
               <Bar
                 data={skillData}
@@ -200,7 +223,7 @@ const About = () => {
 
         {/* Projects Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-center text-blue-600">
+          <h2 className="text-3xl font-semibold mb-6 text-left text-white">
             Projects
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -224,25 +247,68 @@ const About = () => {
             </Link>
           </div>
         </section>
+        <br />
 
-        {/* Hobbies Section */}
+        {/* Testimonial Section */}
         <section className="my-12">
-          <h2 className="text-2xl font-semibold mb-6">Hobbies & Interests</h2>
-          <ul className="list-disc ml-6">
-            {aboutMe.hobbies.map((hobby, index) => (
-              <li key={index}>{hobby}</li>
-            ))}
-          </ul>
+          <h2 className="text-3xl font-semibold mb-6">Testimonials</h2>
+          {aboutMe.testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out"
+            >
+              <br />
+              <p className="text-lg leading-relaxed text-gray-300 mb-4">
+                "{testimonial.testimonial}"
+                <br />
+              </p>
+              <p className="text-gray-400">
+                - {testimonial.name}, {testimonial.role}
+              </p>
+            </div>
+          ))}
         </section>
 
-        {/* Languages Section */}
-        <section className="my-12">
-          <h2 className="text-2xl font-semibold mb-6">Languages</h2>
-          <ul className="list-disc ml-6">
-            {aboutMe.languages.map((language, index) => (
-              <li key={index}>{language}</li>
-            ))}
-          </ul>
+        {/* Fun Facts Section */}
+        <section className="my-12 text-left text-white">
+          <h2 className="text-3xl font-bold mb-6 ease-in-out">Fun Facts</h2>
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            <ul className="list-disc ml-6 text-lg text-gray-300">
+              {aboutMe.funFacts.map((fact, index) => (
+                <li key={index} className="mb-2">
+                  {fact}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section className="my-12 text-left text-white">
+          <h2 className="text-3xl font-bold mb-6 ease-in-out">
+            Hobbies & Interests
+          </h2>
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            <ul className="list-disc ml-6 text-lg text-gray-300">
+              {aboutMe.hobbies.map((hobbies, index) => (
+                <li key={index} className="mb-2">
+                  {hobbies}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section className="my-12 text-left text-white">
+          <h2 className="text-3xl font-bold mb-6 ease-in-out">Languages</h2>
+          <div className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            <ul className="list-disc ml-6 text-lg text-gray-300">
+              {aboutMe.languages.map((language, index) => (
+                <li key={index} className="mb-2">
+                  {language}
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
       </div>
     </div>
