@@ -62,13 +62,13 @@ export default function Home() {
               I am a passionate software developer and data analyst with
               expertise in backend development, data visualization, and
               statistical analysis. Skilled in technologies like Node.js,
-              Express.js, MongoDB, Python, and React, I have built scalable web
+              Express.js, MongoDB, Python, JavaScript and ReactJS, I have built scalable web
               applications and data-driven solutions.
             </p>
 
             <p className="text-xl text-white mt-10 text-left">
               "Certified in MERN stack development", data analysis, and machine
-              learning, I excel in leveraging problem-solving and
+              learning Algorithms, I excel in leveraging problem-solving and
               critical-thinking skills to deliver innovative results. Whether
               developing dynamic APIs, analyzing datasets, or leading workshops,
               I am dedicated to continuous learning and impactful contributions.

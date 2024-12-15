@@ -1,122 +1,181 @@
 import {
-  ArcElement,
+  CategoryScale,
   Chart as ChartJS,
   Legend,
+  LinearScale,
+  LineController,
+  LineElement,
+  PointElement,
   RadialLinearScale,
-  Tooltip
+  Tooltip,
 } from "chart.js";
 import React, { useEffect } from "react";
 import { Bar, Radar } from "react-chartjs-2";
+import { Link } from "react-router-dom";
 
-// Register the required components for Chart.js
-ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
+ChartJS.register(
+  LineElement,
+  PointElement,
+  LineController,
+  CategoryScale,
+  LinearScale,
+  RadialLinearScale,
+  Tooltip,
+  Legend
+);
 
 const About = () => {
-  // Cleanup: destroy any instances of Chart.js when the component unmounts
   useEffect(() => {
     return () => {
-      Object.values(ChartJS.instances).forEach((instances) => {
-        instances.destroy();
+      Object.values(ChartJS.instances).forEach((instance) => {
+        instance.destroy();
       });
     };
   }, []);
 
-  // Data for Skills Visualization
   const skillData = {
-    labels: ["JavaScript", "Node.js", "Python", "React", "MongoDB"],
+    labels: [
+      "Software Development",
+      "Backend Development",
+      "Frontend Development",
+      "MERN Stack Development",
+      "ReactJs",
+      "Database",
+      "Data Analyst",
+    ],
     datasets: [
       {
         label: "Skill Proficiency (%)",
-        data: [80, 90, 85, 75, 70],
-        backgroundColor: "rgba(54, 162, 235, 0.2)",
+        data: [90, 100, 85, 80, 90, 90, 80],
+        backgroundColor: "rgba(64, 162, 235, 0.2)",
         borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 1,
       },
     ],
   };
 
-  // Data for Journey Timeline
-  const milestones = [
-    {
-      year: "2020",
-      title: "Started B.Tech",
-      description: "Joined Jawaharlal Nehru Technological University.",
-    },
-    {
-      year: "2022",
-      title: "Python Training",
-      description: "Completed Python training with EZ Training & Technologies.",
-    },
-    {
-      year: "2023",
-      title: "DevOps Workshop",
-      description: "Facilitated an interactive DevOps workshop.",
-    },
-    {
-      year: "2024",
-      title: "Graduation",
-      description: "Completed B.Tech with CGPA 7.21.",
-    },
-  ];
+  const aboutMe = {
+    introduction:
+      "Hi! I’m Danavath Sunil Rathod, a dedicated Software Developer with a solid academic foundation and a passion for creating impactful solutions through technology. I aim to make a meaningful contribution to the tech world by crafting scalable, efficient, and user-friendly applications.",
+    education:
+      "I hold a Bachelor’s degree in Computer Science and Technology from Jawaharlal Nehru Technological University (JNTUH), Hyderabad, where I graduated with First Class honors. Throughout my academic career, I delved into key concepts like Operating Systems, Network Systems, and Database Management, laying the foundation for my professional growth.",
+    professionalJourney: [
+      {
+        title: "Professional Journey - AISHWI Technologies Pvt. Ltd",
+        content: [
+          "Worked as a Software Developer Intern at AISHWI Technologies Pvt. Ltd, developing backend APIs using JavaScript, Node.js, Express.js, and MongoDB.",
+          "Involved in enhancing system performance and implementing secure user authentication mechanisms.",
+          "Collaborated on database design and improved system architecture by introducing security protocols such as JWT authentication, ensuring secure and efficient application deployment.",
+        ],
+        image: "/public/aishwi_technologies_logo.jpeg",
+      },
+      {
+        title: "Professional Journey - Unified Mentor",
+        content: [
+          "As a Data Analyst Intern at Unified Mentor, responsible for data validation, exploratory analysis, and data visualization using Power BI and Tableau.",
+          "Provided actionable insights to drive business improvements.",
+        ],
+        image: "/public/unifiedmentor.png",
+        reverse: true,
+      },
+    ],
+    projects: [
+      "Company Home Page: Developed a dynamic company homepage using MongoDB, Express.js, and a responsive frontend with HTML, CSS, and JavaScript.",
+      "Profile Dashboard: Designed an interactive Profile Dashboard with React.js and Tailwind.",
+      "YouTube Clone: Built a video hosting platform backend with features like video uploads and secure JWT-based authentication.",
+      "Exam Portal: Created an online exam portal that supports question loading, timers, and result submission with a MySQL backend.",
+      "Signature Forgery Detection: Developed a machine learning project using Python and PyTorch to detect signature forgeries.",
+      "Hate Speech Detection: Built a Python-based project for identifying hate speech on Twitter using natural language processing techniques.",
+      "Todo Application: Designed a full-stack application using Node.js, MongoDB, and Express.js for managing user tasks with a login and registration system.",
+    ],
+    skills:
+      "I have developed a strong skill set across various technologies, including backend development with Node.js, MongoDB, and Python, along with frontend frameworks like React.",
+    mission:
+      "My mission is to continue building impactful software solutions that address real-world problems. With a strong foundation in full-stack development, I am committed to learning new technologies and improving my skills.",
+    hobbies: [
+      "Playing Football",
+      "Reading Books",
+      "Photography",
+      "Traveling",
+      "Gaming",
+    ],
+    languages: ["English", "Hindi", "Telugu", "Marathi"],
+  };
 
-  // Data for Fun Facts
-  const funFacts = [
-    { title: "Projects Completed", value: 15 },
-    { title: "Lines of Code Written", value: "50,000+" },
-    { title: "Cups of Coffee Consumed", value: 200 },
-  ];
-
-  // Testimonials
-  const testimonials = [
-    {
-      name: "John Doe",
-      role: "Manager",
-      feedback: "Great team player and excellent problem-solver!",
-    },
-    {
-      name: "Jane Smith",
-      role: "Colleague",
-      feedback: "Innovative and reliable developer.",
-    },
-    {
-      name: "Mark Lee",
-      role: "Client",
-      feedback: "Delivered quality work on time.",
-    },
-  ];
-
-  // Hobbies and Interests
-  const hobbies = [
-    "Playing Football",
-    "Reading Books",
-    "Photography",
-    "Traveling",
-  ];
-
-  return (
-    <div className="py-16 bg-gradient-to-r from-black to-gray-900 text-gray-200">
-      <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-12">About Me</h1>
-
-        {/* Journey Timeline */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-6">Journey Timeline</h2>
-          <ul className="space-y-4">
-            {milestones.map((milestone, index) => (
-              <li key={index} className="p-4 bg-gray-800 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg">
-                  {milestone.year} - {milestone.title}
-                </h3>
-                <p>{milestone.description}</p>
+  const renderSection = (title, content, imageSrc, reverse = false) => (
+    <section
+      className={`my-12 grid text-blue-600 grid-cols-1 md:grid-cols-2 gap-8 items-center ${
+        reverse ? "md:flex-row-reverse" : ""
+      }`}
+    >
+      <div className="text-left text-stone-50">
+        <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+        {Array.isArray(content) ? (
+          <ul className="list-disc pl-6">
+            {content.map((item, index) => (
+              <li key={index} className="text-lg leading-relaxed mb-2">
+                {item}
               </li>
             ))}
           </ul>
-        </section>
+        ) : (
+          <p className="text-lg leading-relaxed">{content}</p>
+        )}
+      </div>
+      <div className="image-content text-center">
+        <img
+          src={imageSrc}
+          alt={title}
+          className="rounded-2xl w-full sm:w-96 shadow-black border-4 opacity-100 hover:scale-110 transition-all duration-700 ease-in-out"
+        />
+      </div>
+    </section>
+  );
 
+  return (
+    <div className="py-16 bg-gradient-to-r from-black to-gray-800 text-gray-200">
+      <div className="container mx-auto px-8 lg:px-16">
+        <h1 className="text-4xl font-bold text-center mb-12 sm:w-80">
+          About Me
+        </h1>
+
+        {renderSection(
+          "Introduction",
+          aboutMe.introduction,
+          "/public/homeprofile2image.jpg"
+        )}
+        <br />
+        {renderSection(
+          "Education",
+          aboutMe.education,
+          "/public/educationimage.jpeg",
+          true
+        )}
+        <br />
+        <br />
+        {/* Render Professional Journey Dynamically */}
+        {aboutMe.professionalJourney.map((journey, index) =>
+          renderSection(
+            journey.title,
+            journey.content,
+            journey.image,
+            journey.reverse
+          )
+        )}
+        <br />
+        {renderSection(
+          "Mission",
+          aboutMe.mission,
+          "/public/missionimage.jpg",
+          true
+        )}
+        <br />
         {/* Skills Visualization */}
         <section className="my-12">
-          <h2 className="text-2xl font-semibold mb-6">Skills Visualization</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h2 className="text-2xl font-semibold mb-6 from-neutral-50">
+            Skills Visualization
+          </h2>
+          <div className="grid grid-cols-3 md:grid-cols-2 gap-6 text-stone-50">
             <div>
               <Bar
                 data={skillData}
@@ -137,47 +196,51 @@ const About = () => {
             </div>
           </div>
         </section>
+        <br />
 
-        {/* Testimonials */}
-        <section className="my-12">
-          <h2 className="text-2xl font-semibold mb-6">Testimonials</h2>
-          <div className="space-y-4">
-            {testimonials.map((testimonial, index) => (
-              <blockquote
-                key={index}
-                className="p-6 bg-gray-800 rounded-lg shadow-md"
-              >
-                <p className="italic">"{testimonial.feedback}"</p>
-                <cite className="block mt-2 font-bold">
-                  - {testimonial.name}, {testimonial.role}
-                </cite>
-              </blockquote>
-            ))}
-          </div>
-        </section>
-
-        {/* Fun Facts */}
-        <section className="my-12">
-          <h2 className="text-2xl font-semibold mb-6">Fun Facts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {funFacts.map((fact, index) => (
+        {/* Projects Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-center text-blue-600">
+            Projects
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {aboutMe.projects.map((project, index) => (
               <div
                 key={index}
-                className="p-4 bg-gray-800 rounded-lg shadow-md text-center"
+                className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
               >
-                <h3 className="text-xl font-bold">{fact.value}</h3>
-                <p>{fact.title}</p>
+                <p className="text-lg leading-relaxed text-gray-300 mb-4">
+                  {project}
+                </p>
               </div>
             ))}
           </div>
+          <div className="text-center mt-6">
+            <Link
+              to="/project"
+              className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-900 transition duration-300"
+            >
+              View Projects on Dashboard
+            </Link>
+          </div>
         </section>
 
-        {/* Hobbies and Interests */}
+        {/* Hobbies Section */}
         <section className="my-12">
           <h2 className="text-2xl font-semibold mb-6">Hobbies & Interests</h2>
           <ul className="list-disc ml-6">
-            {hobbies.map((hobby, index) => (
+            {aboutMe.hobbies.map((hobby, index) => (
               <li key={index}>{hobby}</li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Languages Section */}
+        <section className="my-12">
+          <h2 className="text-2xl font-semibold mb-6">Languages</h2>
+          <ul className="list-disc ml-6">
+            {aboutMe.languages.map((language, index) => (
+              <li key={index}>{language}</li>
             ))}
           </ul>
         </section>
