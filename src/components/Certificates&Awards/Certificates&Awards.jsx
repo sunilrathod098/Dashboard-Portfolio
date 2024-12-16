@@ -17,63 +17,63 @@ const CertificatesAndAwards = () => {
       title: "Software Developer at AISHWI Technologies Pvt. Ltd",
       description:
         "6-month internship as a Software Developer at AISHWI Technologies Pvt. Ltd.",
-      imageUrl: "/public/certificates/aishwitechintern.jpg",
+      imageUrl: "/src/assets/images/aishwi_technologies_logo.jpeg",
     },
     {
       id: 2,
       title: "Certified Data Analyst at Unified Mentor",
       description:
         "Awarded for completing an advanced data analytics certification.",
-      imageUrl: "/public/certificates/unifiredmentorintern.jpg",
+      imageUrl: "/src/assets/certificates/unifiredmentorintern.jpg",
     },
     {
       id: 3,
       title: "Machine Learning Intern at Rinex",
       description:
         "6-month Machine Learning internship at Rinex, learning ML models.",
-      imageUrl: "/public/certificates/internship_Danavath Sunil Rathod_273[517].jpg",
+      imageUrl: "/src/assets/certificates/internship_Danavath Sunil Rathod_273[517].jpg",
     },
     {
       id: 4,
       title: "MERN Stack Developer",
       description:
         "Certified as a MERN Stack Developer through an intensive bootcamp.",
-      imageUrl: "/public/certificates/MERN Stack__page-0001.jpg",
+      imageUrl: "/src/assets/certificates/MERN Stack__page-0001.jpg",
     },
     {
       id: 5,
       title: "Data Analyst from PrepInsta",
       description:
         "Awarded for completing a Data Analytics course with PrepInsta.",
-      imageUrl: "/public/certificates/dataanalytprepinsta.jpg",
+      imageUrl: "/src/assets/certificates/dataanalytprepinsta.jpg",
     },
     {
       id: 6,
       title: "Python from E-Box, Bangalore",
       description:
         "Completed Python programming certification from E-Box, Bangalore.",
-      imageUrl: "/public/certificates/E-Box Python Certificate.png",
+      imageUrl: "/src/assets/certificates/E-Box Python Certificate.png",
     },
     {
       id: 7,
       title: "DSA from Smart Interview",
       description:
         "Awarded for completing Data Structures and Algorithms certification.",
-      imageUrl: "/public/certificates/Screenshot 2024-12-15 163319.png",
+      imageUrl: "/src/assets/certificates/Screenshot 2024-12-15 163319.png",
     },
     {
       id: 8,
       title: "Machine Learning from PrepInsta",
       description:
         "Certified in Machine Learning techniques and applications from PrepInsta.",
-      imageUrl: "/public/certificates/mlfromprepinsta.png",
+      imageUrl: "/src/assets/certificates/mlfromprepinsta.png",
     },
     {
       id: 9,
       title: "Gen AI from LinkedIn",
       description:
         "Completed Generative AI course on LinkedIn to enhance skills in AI.",
-      imageUrl: "/public/certificates/genai.png",
+      imageUrl: "/src/assets/certificates/genai.png",
     },
   ];
 
@@ -84,35 +84,35 @@ const CertificatesAndAwards = () => {
       title: "Educational Certificate (First Class) from JNTUH",
       description:
         "Awarded First Class degree certificate from JNTUH College for excellence in academics.",
-      imageUrl: "/public/certificates/acadamiccerti.jpg",
+      imageUrl: "/src/assets/certificates/acadamiccerti.jpg",
     },
     {
       id: 2,
       title: "Hackathon Winner",
       description:
         "Won first place in a regional hackathon with a tech-driven solution.",
-      imageUrl: "/public/certificates/hackatonconenct.jpg",
+      imageUrl: "/src/assets/certificates/hackatonconenct.jpg",
     },
     {
       id: 3,
       title: "Course Completion Certificate from AISHWI Technologies Pvt. Ltd",
       description:
         "Completed an advanced professional course at AISHWI Technologies Pvt. Ltd.",
-      imageUrl: "/public/certificates/aishwicompletion.jpg",
+      imageUrl: "/src/assets/certificates/aishwicompletion.jpg",
     },
     {
       id: 4,
       title: "National Level CIT Internship Test",
       description:
         "Awarded based on professional skills from Internship Studio for a national level internship test.",
-      imageUrl: "/public/certificates/cittest.png",
+      imageUrl: "/src/assets/certificates/cittest.png",
     },
     {
       id: 5,
       title: "National Level Football Championship",
       description:
         "Represented and competed in a national-level football championship, showcasing teamlead, teamwork and sportsmanship.",
-      imageUrl: "/public/certificates/nlfootbal.jpg",
+      imageUrl: "/src/assets/certificates/nlfootbal.jpg",
     },
   ];
 

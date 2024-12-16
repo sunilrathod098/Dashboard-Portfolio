@@ -8,7 +8,7 @@ return (
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <Link to="/" className="flex items-center">
           <img
-            src="/public/images/profilelogo-file.jpg"
+            src="/src/assets/images/profilelogo-file.jpg"
             className="mr-8 h-16"
             alt="Logo"
           />
