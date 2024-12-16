@@ -67,7 +67,7 @@ const About = () => {
           "Involved in enhancing system performance and implementing secure user authentication mechanisms.",
           "Collaborated on database design and improved system architecture by introducing security protocols such as JWT authentication, ensuring secure and efficient application deployment.",
         ],
-        image: "/src/assets/images/aishwi_technologies_logo.jpeg",
+        image: "/dist/assets/images/aishwi_technologies_logo.jpeg",
       },
       {
         title: "Work Experience - Unified Mentor",
@@ -75,7 +75,7 @@ const About = () => {
           "As a Data Analyst Intern at Unified Mentor, responsible for data validation, exploratory analysis, and data visualization using Power BI and Tableau.",
           "Provided actionable insights to drive business improvements.",
         ],
-        image: "/src/assets/images/unifiedmentor.png",
+        image: "/dist/assets/images/unifiedmentor.png",
         reverse: true,
       },
     ],
@@ -160,13 +160,13 @@ const About = () => {
         {renderSection(
           "Introduction",
           aboutMe.introduction,
-          "/src/assets/images/sunilrathod2.jpg"
+          "/dist/assets/images/sunilrathod2.jpg"
         )}
         <br />
         {renderSection(
           "Education",
           aboutMe.education,
-          "/src/assets/images/educationimage.jpeg",
+          "/dist/assets/images/educationimage.jpeg",
           true
         )}
         <br />
@@ -189,7 +189,7 @@ const About = () => {
         {renderSection(
           "Mission",
           aboutMe.mission,
-          "/src/assets/images/missionimage.jpg",
+          "/dist/assets/images/missionimage.jpg",
           true
         )}
         <br />
