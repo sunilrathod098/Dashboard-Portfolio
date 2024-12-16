@@ -56,14 +56,14 @@ export default function Home() {
               Building Scalable Solutions & Data-Driven Insights for a Smarter
               Tomorrow
             </h2>
-            
+
             {/* Short Bio Section */}
             <p className="text-xl text-white mt-10 text-left">
               I am a passionate software developer and data analyst with
               expertise in backend development, data visualization, and
               statistical analysis. Skilled in technologies like Node.js,
-              Express.js, MongoDB, Python, JavaScript and ReactJS, I have built scalable web
-              applications and data-driven solutions.
+              Express.js, MongoDB, Python, JavaScript and ReactJS, I have built
+              scalable web applications and data-driven solutions.
             </p>
 
             <p className="text-xl text-white mt-10 text-left">
@@ -118,6 +118,14 @@ export default function Home() {
                 className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-900 transition duration-300"
               >
                 Projects
+              </Link>
+
+              {/* certificates & awards */}
+              <Link
+                to="/certificates"
+                className="px-4 py-2 bg-orange-400 text-white rounded-md hover:bg-orange-900 transition duration-300"
+              >
+                Certificates & Awards
               </Link>
             </div>
           </div>
