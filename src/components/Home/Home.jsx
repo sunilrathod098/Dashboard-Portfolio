@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const [greeting, setGreeting] = useState("");
   const [image, setImage] = useState(
-    "/dist/assets/images/homeprofile2image.jpg"
+    "/dist/assets/homeprofile2image.jpg"
   ); // Initial image
 
   // Update greeting based on the time of day
@@ -22,9 +22,9 @@ export default function Home() {
   // Toggle the image on click
   const toggleImage = () => {
     setImage((prevImage) =>
-      prevImage === "/dist/assets/images/homeprofile2image.jpg"
-        ? "/dist/assets/images/homeprofile1image.jpg"
-        : "/dist/assets/images/homeprofile2image.jpg"
+      prevImage === "/dist/assets/homeprofile2image.jpg"
+        ? "/dist/assets/homeprofile1image.jpg"
+        : "/dist/assets/homeprofile2image.jpg"
     );
   };
 

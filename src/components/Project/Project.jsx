@@ -7,37 +7,37 @@ export default function Projects() {
         title: "Profile Dashboard",
         description:
           "A Profile Dashboard is an interactive interface that displays and manages user information. Built with JavaScript and React.js/Tailwind, it provides a dynamic and user-friendly experience.",
-        image: "/dist/assets/projects/profiledashboaerd.png",
+        image: "/dist/assets/profiledashboaerd.png",
       },
       {
         title: "YouTube Project",
         description:
           "A feature-rich YouTube clone that allows users to search, watch, and upload videos with an intuitive interface.",
-        image: "/dist/assets/projects/youtubeclone.png",
+        image: "/dist/assets/youtubeclone.png",
       },
       {
         title: "Online Exam Portal",
         description:
           "Developed a secure and scalable Online Exam Portal using Node.js, Express.js, MySQL, and a responsive frontend with HTML and CSS, featuring real-time question loading, result storage, and JWT-based authentication.",
-        image: "/dist/assets/projects/onlineexamportal.webp",
+        image: "/dist/assets/onlineexamportal.webp",
       },
       {
         title: "Company Home Page",
         description:
           "Built a dynamic Company Home Website with MongoDB, Express.js, and a responsive frontend using HTML, CSS, and JavaScript, handling form submissions and user interactions seamlessly.",
-        image: "/dist/assets/projects/aishwi_technologies_logo.jpeg",
+        image: "/dist/assets/aishwi_technologies_logo.jpeg",
       },
       {
         title: "Todo List Project",
         description:
           "A dynamic Todo List app where users can add, update, delete, and mark tasks as completed with a sleek design.",
-        image: "/dist/assets/projects/todo.jpg",
+        image: "/dist/assets/todo.jpg",
       },
       {
         title: "User Management System",
         description:
           "A robust system for managing users, including features like registration, login, profile management, and user roles.",
-        image: "/dist/assets/projects/usermanagement.jpg",
+        image: "/dist/assets/usermanagement.jpg",
       },
     ],
 
@@ -46,31 +46,31 @@ export default function Projects() {
         title: "FIFA World Cup Data Analyst",
         description:
           "Analyzed historical FIFA World Cup data to uncover trends, patterns, and performance metrics. Created dashboards for visualizing team statistics and match insights.",
-        image: "/dist/assets/projects/fifaworld.png",
+        image: "/dist/assets/fifaworld.png",
       },
       {
         title: "HR Attributes Analyst",
         description:
           "Explored HR datasets to identify trends in employee performance, attrition, and satisfaction. Delivered actionable insights for workforce management.",
-        image: "/dist/assets/projects/hranalyst.png",
+        image: "/dist/assets/hranalyst.png",
       },
       {
         title: "Crop Production in India Analyst",
         description:
           "Analyzed agricultural data to understand crop production trends in India. Visualized data using charts and graphs for better decision-making in the agricultural sector.",
-        image: "/dist/assets/projects/cropindia.png",
+        image: "/dist/assets/cropindia.png",
       },
       {
         title: "Bird Strikes Data Analyst",
         description:
           "Examined bird strike data to assess risks to aviation and identify patterns to improve air travel safety. Developed visualizations to support mitigation strategies.",
-        image: "/dist/assets/projects/birdstiks.png",
+        image: "/dist/assets/birdstiks.png",
       },
       {
         title: "Amazon Sales Data Analyst",
         description:
           "Performed sales data analysis for Amazon, identifying product trends, seasonal patterns, and regional preferences. Provided insights for optimizing sales strategies.",
-        image: "/dist/assets/projects/amazondata.png",
+        image: "/dist/assets/amazondata.png",
       },
     ],
 
@@ -79,13 +79,13 @@ export default function Projects() {
         title: "Signature Forgery Detection",
         description:
           "A machine learning-based system to detect signature forgery with high accuracy, built using Python and PyTorch.",
-        image: "/dist/assets/projects/forgedsignatures.jpg",
+        image: "/dist/assets/forgedsignatures.jpg",
       },
       {
         title: "Twitter Hate Speech Detection",
         description:
           "Developed a Twitter Hate Speech Detection system using Python, leveraging machine learning techniques to identify and classify harmful content. Implemented data preprocessing, feature extraction, and model training.",
-        image: "/dist/assets/projects/twitterhatespeechfeatured.jpg",
+        image: "/dist/assets/twitterhatespeechfeatured.jpg",
       },
     ],
   };
