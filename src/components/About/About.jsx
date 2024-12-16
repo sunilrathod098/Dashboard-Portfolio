@@ -160,7 +160,7 @@ const About = () => {
         {renderSection(
           "Introduction",
           aboutMe.introduction,
-          "/public/sunilrathod1.jpg"
+          "/public/sunilrathod2.jpg"
         )}
         <br />
         {renderSection(
