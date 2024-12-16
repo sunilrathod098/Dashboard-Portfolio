@@ -93,29 +93,22 @@ const CertificatesAndAwards = () => {
         "Won first place in a regional hackathon with a tech-driven solution.",
       imageUrl: "/public/certificates/hackatonconenct.jpg",
     },
-    // {
-    //   id: 3,
-    //   title: "Certified DevOps Engineer",
-    //   description:
-    //     "Completed a comprehensive DevOps certification, mastering tools like Docker, Kubernetes, Jenkins, and CI/CD pipelines.",
-    //   imageUrl: "https://link-to-image.com/devops-certification.jpg",
-    // },
     {
-      id: 4,
+      id: 3,
       title: "Course Completion Certificate from AISHWI Technologies Pvt. Ltd",
       description:
         "Completed an advanced professional course at AISHWI Technologies Pvt. Ltd.",
       imageUrl: "/public/certificates/aishwicompletion.jpg",
     },
     {
-      id: 5,
+      id: 4,
       title: "National Level CIT Internship Test",
       description:
         "Awarded based on professional skills from Internship Studio for a national level internship test.",
       imageUrl: "/public/certificates/cittest.png",
     },
     {
-      id: 6,
+      id: 5,
       title: "National Level Football Championship",
       description:
         "Represented and competed in a national-level football championship, showcasing teamlead, teamwork and sportsmanship.",

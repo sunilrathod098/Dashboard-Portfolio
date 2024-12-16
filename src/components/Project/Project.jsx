@@ -7,37 +7,37 @@ export default function Projects() {
         title: "Profile Dashboard",
         description:
           "A Profile Dashboard is an interactive interface that displays and manages user information. Built with JavaScript and React.js/Tailwind, it provides a dynamic and user-friendly experience.",
-        image: "public/profiledashboaerd.png",
+        image: "/public/projects/profiledashboaerd.png",
       },
       {
         title: "YouTube Project",
         description:
           "A feature-rich YouTube clone that allows users to search, watch, and upload videos with an intuitive interface.",
-        image: "/youtube.png",
+        image: "/public/projects/youtubeclone.png",
       },
       {
         title: "Online Exam Portal",
         description:
           "Developed a secure and scalable Online Exam Portal using Node.js, Express.js, MySQL, and a responsive frontend with HTML and CSS, featuring real-time question loading, result storage, and JWT-based authentication.",
-        image: "/public/onlineexamportal.webp",
+        image: "/public/projects/onlineexamportal.webp",
       },
       {
         title: "Company Home Page",
         description:
           "Built a dynamic Company Home Website with MongoDB, Express.js, and a responsive frontend using HTML, CSS, and JavaScript, handling form submissions and user interactions seamlessly.",
-        image: "/public/aishwi_technologies_logo.jpeg",
+        image: "/public/projects/aishwi_technologies_logo.jpeg",
       },
       {
         title: "Todo List Project",
         description:
           "A dynamic Todo List app where users can add, update, delete, and mark tasks as completed with a sleek design.",
-        image: "/todo.jpg",
+        image: "/public/projects/todo.jpg",
       },
       {
         title: "User Management System",
         description:
           "A robust system for managing users, including features like registration, login, profile management, and user roles.",
-        image: "/usermanagement.jpg",
+        image: "/public/projects/usermanagement.jpg",
       },
     ],
 
@@ -79,13 +79,13 @@ export default function Projects() {
         title: "Signature Forgery Detection",
         description:
           "A machine learning-based system to detect signature forgery with high accuracy, built using Python and PyTorch.",
-        image: "/Forged-Signatures.jpg",
+        image: "/public/projects/Forged-Signatures.jpg",
       },
       {
         title: "Twitter Hate Speech Detection",
         description:
           "Developed a Twitter Hate Speech Detection system using Python, leveraging machine learning techniques to identify and classify harmful content. Implemented data preprocessing, feature extraction, and model training.",
-        image: "/public/twitter-hate-speech-featured.jpg",
+        image: "/public/projects/twitter-hate-speech-featured.jpg",
       },
     ],
   };

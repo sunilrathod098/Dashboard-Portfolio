@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   const [greeting, setGreeting] = useState("");
-  const [image, setImage] = useState("/public/homeprofile2image.jpg"); // Initial image
+  const [image, setImage] = useState("/public/images/homeprofile2image.jpg"); // Initial image
 
   // Update greeting based on the time of day
   useEffect(() => {
@@ -20,9 +20,9 @@ export default function Home() {
   // Toggle the image on click
   const toggleImage = () => {
     setImage((prevImage) =>
-      prevImage === "/public/homeprofile2image.jpg"
-        ? "/public/homeprofile1image.jpg"
-        : "/public/homeprofile2image.jpg"
+      prevImage === "/public/images/homeprofile2image.jpg"
+        ? "/public/images/homeprofile1image.jpg"
+        : "/public/images/homeprofile2image.jpg"
     );
   };
 
