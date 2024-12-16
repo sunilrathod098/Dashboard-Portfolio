@@ -123,7 +123,7 @@ export default function Home() {
               {/* certificates & awards */}
               <Link
                 to="/certificates"
-                className="px-4 py-2 bg-orange-400 text-white rounded-md hover:bg-orange-900 transition duration-300"
+                className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-900 transition duration-300"
               >
                 Certificates & Awards
               </Link>

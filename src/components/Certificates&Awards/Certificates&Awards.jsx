@@ -135,7 +135,7 @@ const CertificatesAndAwards = () => {
         and completion of a MERN Stack Developer bootcamp. Additional highlights
         include Python certification from E-Box, a DSA course from Smart
         Interview, and Generative AI training on LinkedIn, reflecting diverse
-        technical skills and continuous learning.
+        technical skills and continuous learning and this certificates are show in LinkedIn just refer my LinkedIn Profile.
       </p>
 
       {/* Certificates Layout */}
