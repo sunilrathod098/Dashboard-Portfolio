@@ -2,20 +2,20 @@ import React, { useState } from "react";
 
 const Technologies = () => {
   const softwareDeveloperTechs = [
-    { name: "JavaScript", image: "public/JavaScriptlogo.png" },
-    { name: "Node.js", image: "public/Nodejslogo.svg" },
+    { name: "JavaScript", image: "public/javascript.png" },
+    { name: "Node.js", image: "public/nodejs.png" },
     { name: "Express.js", image: "public/expressjs.png" },
     { name: "MongoDB", image: "public/mongodb.png" },
     { name: "SQL", image: "public/sqldatabase.png" },
     { name: "JWT Auth", image: "public/jwt.jpeg" },
-    { name: "React", image: "public/Reacticon.svg" },
+    { name: "React", image: "public/react.png" },
     { name: "HTML", image: "public/html.png" },
     { name: "CSS", image: "public/css.png" },
-    { name: "GrahpQL", image: "public/grahpql.jpeg" },
+    { name: "GrahpQL", image: "public/grahpql.jpg" },
   ];
 
   const dataAnalystTechs = [
-    { name: "Python", image: "public/Pythonlogonotext.svg" },
+    { name: "Python", image: "public/python.png" },
     { name: "Power BI", image: "public/poderbi.png" },
     { name: "Tableau", image: "public/tableau.png" },
     {
@@ -38,7 +38,7 @@ const Technologies = () => {
   const toolsTechs = [
     { name: "VS Code", image: "public/vscode.png" },
     { name: "NPM", image: "public/npm.png" },
-    { name: "Vite", image: "public/vite.svg" },
+    { name: "Vite", image: "public/vitereact.png" },
     { name: "Postman", image: "public/postman.png" },
     { name: "ApolloSever", image: "public/apollo.png" },
     { name: "GitHub", image: "public/github.png" },

@@ -25,7 +25,7 @@ export default function Projects() {
         title: "Company Home Page",
         description:
           "Built a dynamic Company Home Website with MongoDB, Express.js, and a responsive frontend using HTML, CSS, and JavaScript, handling form submissions and user interactions seamlessly.",
-        image: "public/aishwi_technologies_logo.jpeg",
+        image: "public/aishwitechimage.jpg",
       },
       {
         title: "Todo List Project",

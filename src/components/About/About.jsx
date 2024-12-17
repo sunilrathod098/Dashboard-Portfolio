@@ -67,7 +67,7 @@ const About = () => {
           "Involved in enhancing system performance and implementing secure user authentication mechanisms.",
           "Collaborated on database design and improved system architecture by introducing security protocols such as JWT authentication, ensuring secure and efficient application deployment.",
         ],
-        image: "public/aishwi_technologies_logo.jpeg",
+        image: "public/aishwitechimage.jpg",
       },
       {
         title: "Work Experience - Unified Mentor",
