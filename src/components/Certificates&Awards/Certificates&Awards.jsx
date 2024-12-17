@@ -17,63 +17,63 @@ const CertificatesAndAwards = () => {
       title: "Software Developer at AISHWI Technologies Pvt. Ltd",
       description:
         "6-month internship as a Software Developer at AISHWI Technologies Pvt. Ltd.",
-      imageUrl: "public/aishwitechintern.jpg",
+      imageUrl: "/aishwitechintern.jpg",
     },
     {
       id: 2,
       title: "Certified Data Analyst at Unified Mentor",
       description:
         "Awarded for completing an advanced data analytics certification.",
-      imageUrl: "public/unifiredmentorintern.jpg",
+      imageUrl: "/unifiredmentorintern.jpg",
     },
     {
       id: 3,
       title: "Machine Learning Intern at Rinex",
       description:
         "6-month Machine Learning internship at Rinex, learning ML models.",
-      imageUrl: "public/internshipdanavathsunilrathod.jpg",
+      imageUrl: "/internshipdanavathsunilrathod.jpg",
     },
     {
       id: 4,
       title: "MERN Stack Developer",
       description:
         "Certified as a MERN Stack Developer through an intensive bootcamp.",
-      imageUrl: "public/mernstack.jpg",
+      imageUrl: "/mernstack.jpg",
     },
     {
       id: 5,
       title: "Data Analyst from PrepInsta",
       description:
         "Awarded for completing a Data Analytics course with PrepInsta.",
-      imageUrl: "public/dataanalytprepinsta.jpg",
+      imageUrl: "/dataanalytprepinsta.jpg",
     },
     {
       id: 6,
       title: "Python from E-Box, Bangalore",
       description:
         "Completed Python programming certification from E-Box, Bangalore.",
-      imageUrl: "public/ebocpythoncertificate.png",
+      imageUrl: "/ebocpythoncertificate.png",
     },
     {
       id: 7,
       title: "DSA from Smart Interview",
       description:
         "Awarded for completing Data Structures and Algorithms certification.",
-      imageUrl: "public/smartinterview.png",
+      imageUrl: "/smartinterview.png",
     },
     {
       id: 8,
       title: "Machine Learning from PrepInsta",
       description:
         "Certified in Machine Learning techniques and applications from PrepInsta.",
-      imageUrl: "public/mlfromprepinsta.png",
+      imageUrl: "/mlfromprepinsta.png",
     },
     {
       id: 9,
       title: "Gen AI from LinkedIn",
       description:
         "Completed Generative AI course on LinkedIn to enhance skills in AI.",
-      imageUrl: "public/genai.png",
+      imageUrl: "/genai.png",
     },
   ];
 
@@ -84,35 +84,35 @@ const CertificatesAndAwards = () => {
       title: "Educational Certificate (First Class) from JNTUH",
       description:
         "Awarded First Class degree certificate from JNTUH College for excellence in academics.",
-      imageUrl: "public/acadamiccerti.jpg",
+      imageUrl: "/acadamiccerti.jpg",
     },
     {
       id: 2,
       title: "Hackathon Winner",
       description:
         "Won first place in a regional hackathon with a tech-driven solution.",
-      imageUrl: "public/hackatonconenct.jpg",
+      imageUrl: "/hackatonconenct.jpg",
     },
     {
       id: 3,
       title: "Course Completion Certificate from AISHWI Technologies Pvt. Ltd",
       description:
         "Completed an advanced professional course at AISHWI Technologies Pvt. Ltd.",
-      imageUrl: "public/aishwicompletion.jpg",
+      imageUrl: "/aishwicompletion.jpg",
     },
     {
       id: 4,
       title: "National Level CIT Internship Test",
       description:
         "Awarded based on professional skills from Internship Studio for a national level internship test.",
-      imageUrl: "public/cittest.png",
+      imageUrl: "/cittest.png",
     },
     {
       id: 5,
       title: "National Level Football Championship",
       description:
         "Represented and competed in a national-level football championship, showcasing teamlead, teamwork and sportsmanship.",
-      imageUrl: "public/nlfootbal.jpg",
+      imageUrl: "/nlfootbal.jpg",
     },
   ];
 
