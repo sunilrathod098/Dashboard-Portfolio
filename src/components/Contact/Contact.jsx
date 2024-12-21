@@ -30,7 +30,7 @@ export default function Contact() {
     <div className="relative flex items-top justify-center min-h-[700px] bg-gradient-to-r from-black to-gray-900 sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div className="mt-8 overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1  sm:grid-cols-3 md:grid-cols-2">
             <div className="p-6 mr-2 bg-bg-gradient-to-r from-black to-gray-900 sm:rounded-lg">
               <h1 className="text-3xl sm:text-4xl text-white font-extrabold tracking-tight">
                 Get in touch:
@@ -121,7 +121,7 @@ export default function Contact() {
               className="p-6 flex flex-col text-black justify-center"
             >
               <div className="flex flex-col">
-                <h1 className="text-stone-50 text-center font-medium">whatsapp-Message</h1>
+                <h1 className="text-stone-50 text-center font-medium">Whatsapp-Message</h1>
                 <label for="name" className="hidden text-black">
                   Full Name
                 </label>

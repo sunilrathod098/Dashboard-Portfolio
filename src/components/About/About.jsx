@@ -151,8 +151,8 @@ const About = () => {
   );
 
   return (
-    <div className="py-16 bg-gradient-to-r from-black to-gray-800 text-gray-200">
-      <div className="container mx-auto px-8 lg:px-16">
+    <div className="py-16 bg-gradient-to-r grid-cols-1 sm:grid-flow-col-2 md:grid-flow-col-3 from-black to-gray-800 text-gray-200">
+      <div className="container grid-cols-1 ms:grid-cols-2  mx-auto px-8 lg:px-16">
         <h1 className="text-4xl font-bold text-center mb-12 sm:w-80">
           About Me
         </h1>
@@ -194,7 +194,7 @@ const About = () => {
         )}
         <br />
         {/* Skills Visualization */}
-        <section className="my-12">
+        <section className="my-12 grid-col-1 sm:grid-cols-2 ">
           <h2 className="text-3xl font-semibold mb-6 from-neutral-50">
             Skills Visualization
           </h2>
@@ -255,7 +255,7 @@ const About = () => {
           {aboutMe.testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out"
+              className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               <br />
               <p className="text-lg leading-relaxed text-gray-300 mb-4">
@@ -298,7 +298,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="my-12 text-left text-white">
+        <section className="my-12 text-left grid-cols-1 text-white">
           <h2 className="text-3xl font-bold mb-6 ease-in-out">Languages</h2>
           <div className="bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <ul className="list-disc ml-6 text-lg text-gray-300">

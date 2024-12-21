@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   const [greeting, setGreeting] = useState("");
-  const [image, setImage] = useState(
-    "/homeprofile2image.jpg"
-  ); // Initial image
+  const [image, setImage] = useState("/homeprofile2image.jpg"); // Initial image
 
   // Update greeting based on the time of day
   useEffect(() => {
@@ -29,13 +27,12 @@ export default function Home() {
   };
 
   return (
-    <div className="home-container mx-auto w-full max-w-7xl">
+    <div className="home-container mx-auto p-4 w-full max-w-7xl">
       {/* Header Section */}
-      <aside className="relative text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-        <div className="flex flex-wrap items-center">
+      <aside className="relative text-black rounded-lg sm:mx-16 mx-2 sm:py-16 py-6">
+        <div className="flex flex-wrap lg:flex-nowrap items-center space-y-6 lg:space-y-0">
           {/* Left Side: Profile Image */}
-          <br />
-          <div className="relative z-10 flex flex-auto justify-items-start sm:w-auto w-full">
+          <div className="flex justify-center lg:w-1/3 w-full">
             <img
               className="rounded-2xl w-full sm:w-80 shadow-black border-4 opacity-100 hover:opacity-100 hover:scale-110 transition-all duration-700 ease-in-out cursor-pointer"
               src={image}
@@ -45,22 +42,22 @@ export default function Home() {
           </div>
 
           {/* Right Side: Content */}
-          <div className="relative z-10 max-w-full sm:w-2/3 w-full py-6 space-y-6 sm:text-start text-center">
+          <div className="relative z-10 lg:w-2/3 w-full space-y-6 sm:text-start text-center px-4">
             {/* Greeting & Introduction */}
-            <h1 className="text-4xl font-bold text-left sm:text-4xl text-white hover:text-orange-700 transition-all duration-300 ease-in-out">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white hover:text-orange-700 transition-all duration-300 ease-in-out">
               {greeting},
               <br />
               I&apos;m{" Danavath Sunil Rathod"}
               <h1 className="text-blue-700">Software Developer</h1>
             </h1>
 
-            <h2 className="text-3xl font-semibold sm:text-4xl text-white hover:text-green-400 transition-all duration-300">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white hover:text-green-400 transition-all duration-300">
               Building Scalable Solutions & Data-Driven Insights for a Smarter
               Tomorrow
             </h2>
 
             {/* Short Bio Section */}
-            <p className="text-xl text-white mt-10 text-left">
+            <p className="text-sm sm:text-base lg:text-lg text-white text-left">
               I am a passionate software developer and data analyst with
               expertise in backend development, data visualization, and
               statistical analysis. Skilled in technologies like Node.js,
@@ -68,22 +65,16 @@ export default function Home() {
               scalable web applications and data-driven solutions.
             </p>
 
-            <p className="text-xl text-white mt-10 text-left">
+            <p className="text-sm sm:text-base lg:text-lg text-white text-left">
               "Certified in MERN stack development", data analysis, and machine
-              learning Algorithms, I excel in leveraging problem-solving and
+              learning algorithms, I excel in leveraging problem-solving and
               critical-thinking skills to deliver innovative results. Whether
               developing dynamic APIs, analyzing datasets, or leading workshops,
               I am dedicated to continuous learning and impactful contributions.
             </p>
 
-            {/* Inspirational Quote or Tagline */}
-            {/* <h2 className="text-3xl font-semibold sm:text-4xl text-white hover:text-green-400 transition-all duration-300">
-              Building Scalable Solutions & Data-Driven Insights for a Smarter
-              Tomorrow
-            </h2> */}
-
             {/* Social Media & Links Section */}
-            <div className="social-buttons flex justify-center space-x-6 mt-8">
+            <div className="social-buttons flex flex-wrap justify-center lg:justify-start space-x-6 mt-8">
               {/* LinkedIn */}
               <a
                 href="https://www.linkedin.com/in/danavath-sunil-rathod-683853202/"
@@ -122,7 +113,7 @@ export default function Home() {
                 Projects
               </Link>
 
-              {/* certificates & awards */}
+              {/* Certificates & Awards */}
               <Link
                 to="/certificates"
                 className="px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-900 transition duration-300"

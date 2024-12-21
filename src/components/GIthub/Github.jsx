@@ -77,7 +77,7 @@ export default function Github() {
   }
 
   return (
-    <div className="flex flex-col items-center text-white p-8">
+    <div className="flex flex-col grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center text-white p-8">
       {/* Avatar and Name Section */}
       <div className="flex items-center justify-center mb-6">
         {/* Avatar */}

@@ -100,7 +100,9 @@ const Technologies = () => {
   };
 
   return (
+    // <div className="grid grid-cols-1 ms:grid-cols-3 md:grid-cols-2 gap-4"> 
     <div className="p-10 bg-gradient-to-r from-black to-gray-850 rounded-md shadow-md w-auto max-w-7xl mx-auto space-y-4">
+      <div className=" grid-cols-1 ms:grid-cols-3 md:grid-cols-2 gap-4"> 
       {/* Software Developer Section */}
       <div className="bg-gray-900 p-5 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-white">
@@ -141,7 +143,8 @@ const Technologies = () => {
           </button>
         </div>
       </div>
-
+<br />
+<br />
       {/* Data Analyst Section */}
       <div className="bg-gray-900 p-5 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-white">Data Analyst</h2>
@@ -180,6 +183,8 @@ const Technologies = () => {
         </div>
       </div>
 
+<br />
+<br />
       {/* Tools Section */}
       <div className="bg-gray-900 p-5 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-white">Tools</h2>
@@ -217,7 +222,9 @@ const Technologies = () => {
           </button>
         </div>
       </div>
+      </div>
     </div>
+    
   );
 };
 
