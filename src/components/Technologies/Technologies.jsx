@@ -108,7 +108,7 @@ const Technologies = () => {
         <h2 className="text-2xl font-bold mb-4 text-white">
           Software Developer
         </h2>
-        <div className="flex items-center text-white justify-center gap-4">
+        <div className="flex items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-white justify-center gap-4">
           <button
             className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
             onClick={() => handleArrowPress("left", "software")}
@@ -116,7 +116,7 @@ const Technologies = () => {
             ◀
           </button>
 
-          <div className="flex flex-wrap text-white justify-center gap-6">
+          <div className="flex flex-wrap text-white justify-center gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {softwareDeveloperTechs
               .slice(softwareIndex, softwareIndex + visibleCount)
               .map((tech, index) => (
@@ -155,7 +155,7 @@ const Technologies = () => {
           >
             ◀
           </button>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {dataAnalystTechs
               .slice(analystIndex, analystIndex + visibleCount)
               .map((tech, index) => (
@@ -195,7 +195,7 @@ const Technologies = () => {
           >
             ◀
           </button>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {toolsTechs
               .slice(toolsIndex, toolsIndex + visibleCount)
               .map((tech, index) => (
