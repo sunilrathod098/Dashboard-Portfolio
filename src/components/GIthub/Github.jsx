@@ -1,6 +1,6 @@
 import {
   BarElement,
-  CategoryScale, // Added LinearScale import
+  CategoryScale,
   Chart as ChartJS,
   Legend,
   LinearScale,
@@ -9,7 +9,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 
-// Register the necessary Chart.js components
+// here er register the necessary Chart.js components of showing daily events on github
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
 export default function Github() {
@@ -18,17 +18,17 @@ export default function Github() {
   const [chartData, setChartData] = useState(null);
 
   useEffect(() => {
-    // Fetch GitHub user data
+    // fetch GitHub user data by github url
     fetch("https://api.github.com/users/sunilrathod098")
       .then((res) => res.json())
       .then((data) => {
-        setData(data);
+        setData(data); //holding user profile data or information in a setData state variable
       })
       .catch((error) => {
         console.error("Error fetching user data:", error);
       });
 
-    // Fetch events and calculate contributions
+    // we fetch events and calculate contributions by using github url
     fetch("https://api.github.com/users/sunilrathod098/events/public")
       .then((res) => res.json())
       .then((events) => {

@@ -150,6 +150,10 @@ const About = () => {
     </section>
   );
 
+
+
+
+  
   return (
     <div className="py-16 bg-gradient-to-r grid-cols-1 sm:grid-flow-col-2 md:grid-flow-col-3 from-black to-gray-800 text-gray-200">
       <div className="container grid-cols-1 ms:grid-cols-2  mx-auto px-8 lg:px-16">
